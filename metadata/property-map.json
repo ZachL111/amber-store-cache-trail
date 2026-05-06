@@ -1,0 +1,28 @@
+{
+  "repo": "amber-store-cache-trail",
+  "language": "Swift",
+  "category": "Databases",
+  "goal": "Develop a Swift command-oriented project for cache scenarios with negative fixtures, human-readable error snapshots, and local-only command execution.",
+  "weights": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 2
+  },
+  "thresholds": {
+    "ship": 180,
+    "watch": 118
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
