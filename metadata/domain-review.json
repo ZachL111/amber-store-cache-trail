@@ -1,0 +1,73 @@
+{
+  "repo": "amber-store-cache-trail",
+  "language": "Swift",
+  "category": "Databases",
+  "goal": "Develop a Swift command-oriented project for cache scenarios with negative fixtures, human-readable error snapshots, and local-only command execution.",
+  "review_model": {
+    "terms": [
+      "index fit",
+      "join width",
+      "constraint risk",
+      "plan drift"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "index fit",
+      "signal": 52,
+      "slack": 48,
+      "drag": 17,
+      "confidence": 76,
+      "score": 177,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "join width",
+      "signal": 80,
+      "slack": 30,
+      "drag": 20,
+      "confidence": 90,
+      "score": 220,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "constraint risk",
+      "signal": 66,
+      "slack": 20,
+      "drag": 19,
+      "confidence": 56,
+      "score": 151,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "plan drift",
+      "signal": 51,
+      "slack": 37,
+      "drag": 25,
+      "confidence": 85,
+      "score": 149,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "index fit",
+      "signal": 52,
+      "slack": 47,
+      "drag": 11,
+      "confidence": 80,
+      "score": 198,
+      "lane": "ship"
+    }
+  ]
+}
